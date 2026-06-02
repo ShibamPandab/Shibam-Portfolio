@@ -72,11 +72,11 @@ export default function Contact() {
           <span className="font-mono text-xs text-amber-500 tracking-widest font-semibold uppercase flex items-center gap-1.5 mb-3">
             <Mail className="w-3.5 h-3.5 animate-pulse" /> 08 / ACQUISITION
           </span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white uppercase sm:w-[80%] lg:w-[60%]">
-            Initiate <span className="text-gold-gradient">Collaboration</span>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white uppercase sm:w-[80%] lg:w-[70%]">
+            Let's Build <span className="text-gold-gradient">Something Amazing</span>
           </h2>
-          <p className="mt-4 text-neutral-400 max-w-xl text-sm sm:text-base font-sans">
-            Ready to collaborate? Fill out the contact form below to get in touch. I will reply within 24 hours.
+          <p className="mt-4 text-neutral-400 max-w-2xl text-sm sm:text-base font-sans">
+            Have a project idea, portfolio request, landing page, business website, or redesign in mind? Let's discuss how I can help bring it to life.
           </p>
           <div className="w-24 h-[1px] bg-amber-500/50 mt-6" />
         </div>
@@ -84,82 +84,125 @@ export default function Contact() {
         {/* Form Split Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* LEFT: Physical contact tags */}
+          {/* LEFT: Interactive Clickable Contact Cards & Developer Details */}
           <div className="lg:col-span-5 text-left space-y-8">
             <h3 className="font-display text-2xl font-bold text-white tracking-tight uppercase">
               Get in Touch Directly
             </h3>
             
             <p className="text-neutral-400 text-sm sm:text-base leading-relaxed font-sans">
-              Have a web development project request, collaboration idea, or full-time engineering opportunity? Please feel free to get in touch using the contact form or directly via email.
+              Have a web development project, collaboration idea, or full-time opportunity? Select any option below to reach me instantly through my networks.
             </p>
 
-            <div className="space-y-6 pt-4 font-sans">
-              
-              {/* Direct Mail */}
-              <div className="flex items-center gap-4 group">
-                <div className="w-11 h-11 rounded-full bg-neutral-950 border border-white/[0.06] flex items-center justify-center text-amber-400 group-hover:border-[#D4AF37]/45 transition-colors">
+            {/* Clickable 2x2 Grid Contact Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              {/* Email Card */}
+              <a 
+                href="mailto:shibampandab@gmail.com" 
+                className="p-5 glass-card rounded-[18px] border border-white/[0.04] text-left hover:border-amber-500/30 hover:shadow-[0_0_20px_rgba(212,175,55,0.08)] transition-all duration-300 block cursor-none interactive-cursor group"
+              >
+                <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3 text-amber-400 group-hover:scale-105 transition-transform duration-300">
                   <Mail className="w-4 h-4" />
                 </div>
-                <div>
-                  <p className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest leading-none">SECURE EMAIL</p>
-                  <a href="mailto:shibampandab@gmail.com" className="font-display text-sm font-semibold text-white hover:text-amber-400 mt-1.5 block cursor-none interactive-cursor transition-colors">
-                    shibampandab@gmail.com
-                  </a>
-                </div>
-              </div>
+                <h4 className="font-display font-bold text-white text-xs uppercase tracking-wide">Email Me</h4>
+                <p className="text-neutral-500 text-[10px] mt-1.5 leading-relaxed font-sans truncate">
+                  shibampandab@gmail.com
+                </p>
+              </a>
 
-              {/* Direct Phone */}
-              <div className="flex items-center gap-4 group">
-                <div className="w-11 h-11 rounded-full bg-neutral-950 border border-white/[0.06] flex items-center justify-center text-amber-400 group-hover:border-[#D4AF37]/45 transition-colors">
-                  <Phone className="w-4 h-4" />
+              {/* WhatsApp Card */}
+              <a 
+                href="https://wa.me/917908861804?text=Hello%20Shibam,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noreferrer"
+                className="p-5 glass-card rounded-[18px] border border-white/[0.04] text-left hover:border-amber-500/30 hover:shadow-[0_0_20px_rgba(212,175,55,0.08)] transition-all duration-300 block cursor-none interactive-cursor group"
+              >
+                <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3 text-amber-400 group-hover:scale-105 transition-transform duration-300">
+                  <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.022-.08-.124-.22-.364-.34-.24-.12-1.418-.7-1.638-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-.992-.367-1.89-1.167-.698-.622-1.17-1.39-1.305-1.63-.137-.24-.015-.37.106-.49.11-.107.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.195-.476-.39-.412-.54-.42-.14-.008-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.418-.58 1.618-1.14.2-.56.2-1.04.14-1.14-.06-.1-.2-.16-.44-.28zM12 2C6.477 2 2 6.477 2 12c0 1.84.497 3.57 1.36 5.07L2 22l5.07-1.36C8.57 21.503 10.3 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.65 0-3.19-.44-4.52-1.21l-.32-.19-2.99.8.81-2.93-.21-.34C4.01 14.81 3.5 13.46 3.5 12c0-4.69 3.81-8.5 8.5-8.5s8.5 3.81 8.5 8.5-3.81 8.5-8.5 8.5z"/>
+                  </svg>
                 </div>
-                <div>
-                  <p className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest leading-none">DIGITAL PHONE</p>
-                  <a href="tel:+919876543210" className="font-display text-sm font-semibold text-white hover:text-amber-400 mt-1.5 block cursor-none interactive-cursor transition-colors">
-                    +91 98765 43210
-                  </a>
-                </div>
-              </div>
+                <h4 className="font-display font-bold text-white text-xs uppercase tracking-wide">WhatsApp Chat</h4>
+                <p className="text-neutral-500 text-[10px] mt-1.5 leading-relaxed font-sans truncate">
+                  Direct message
+                </p>
+              </a>
 
-              {/* Direct Location */}
-              <div className="flex items-center gap-4 group">
-                <div className="w-11 h-11 rounded-full bg-neutral-950 border border-white/[0.06] flex items-center justify-center text-amber-400 group-hover:border-[#D4AF37]/45 transition-colors">
-                  <MapPin className="w-4 h-4" />
+              {/* GitHub Card */}
+              <a 
+                href="https://github.com/ShibamPandab" 
+                target="_blank"
+                rel="noreferrer"
+                className="p-5 glass-card rounded-[18px] border border-white/[0.04] text-left hover:border-amber-500/30 hover:shadow-[0_0_20px_rgba(212,175,55,0.08)] transition-all duration-300 block cursor-none interactive-cursor group"
+              >
+                <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3 text-amber-400 group-hover:scale-105 transition-transform duration-300">
+                  <Github className="w-4 h-4" />
                 </div>
-                <div>
-                  <p className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest leading-none">OFFICE RESIDENCY</p>
-                  <p className="font-display text-sm font-semibold text-white mt-1.5">
-                    Odisha, India (GMT +5:30)
-                  </p>
-                </div>
-              </div>
+                <h4 className="font-display font-bold text-white text-xs uppercase tracking-wide">GitHub</h4>
+                <p className="text-neutral-500 text-[10px] mt-1.5 leading-relaxed font-sans truncate">
+                  ShibamPandab
+                </p>
+              </a>
 
+              {/* LinkedIn Card */}
+              <a 
+                href="https://www.linkedin.com/in/shibam-pandab" 
+                target="_blank"
+                rel="noreferrer"
+                className="p-5 glass-card rounded-[18px] border border-white/[0.04] text-left hover:border-amber-500/30 hover:shadow-[0_0_20px_rgba(212,175,55,0.08)] transition-all duration-300 block cursor-none interactive-cursor group"
+              >
+                <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3 text-amber-400 group-hover:scale-105 transition-transform duration-300">
+                  <Linkedin className="w-4 h-4" />
+                </div>
+                <h4 className="font-display font-bold text-white text-xs uppercase tracking-wide">LinkedIn</h4>
+                <p className="text-neutral-500 text-[10px] mt-1.5 leading-relaxed font-sans truncate">
+                  shibam-pandab
+                </p>
+              </a>
             </div>
 
-            {/* Social Channels */}
-            <div className="pt-6 border-t border-white/[0.05] space-y-4">
-              <p className="font-mono text-[10px] text-neutral-500 uppercase tracking-widest leading-none">NETWORK NODES</p>
-              <div className="flex gap-4">
-                <a 
-                  href="https://github.com/ShibamPandab" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="w-10 h-10 rounded-full border border-white/[0.06] hover:border-amber-400 flex items-center justify-center text-neutral-400 hover:text-amber-400 bg-neutral-950/20 cursor-none interactive-cursor transition-all"
-                  aria-label="GitHub Profile"
-                >
-                  <Github className="w-4.5 h-4.5" />
-                </a>
-                
-                <a 
-                  href="https://www.linkedin.com/in/shibam-pandab" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="w-10 h-10 rounded-full border border-white/[0.06] hover:border-amber-400 flex items-center justify-center text-neutral-400 hover:text-amber-400 bg-neutral-950/20 cursor-none interactive-cursor transition-all"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="w-4.5 h-4.5" />
-                </a>
+            {/* Why Work With Me Trust Section */}
+            <div className="p-5 glass-card rounded-[18px] border border-white/[0.04] space-y-4">
+              <h4 className="font-display font-extrabold text-white text-xs uppercase tracking-wider flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500" /> Why Work With Me?
+              </h4>
+              <ul className="space-y-2.5 text-xs text-neutral-400 font-sans">
+                <li className="flex items-start gap-2.5">
+                  <span className="text-amber-500 font-bold">✓</span>
+                  <span>Responsive Communication</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-amber-500 font-bold">✓</span>
+                  <span>Modern Frontend Development</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-amber-500 font-bold">✓</span>
+                  <span>Mobile Friendly Websites</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-amber-500 font-bold">✓</span>
+                  <span>Fast Deployment with Vercel</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-amber-500 font-bold">✓</span>
+                  <span>AI-Assisted Rapid Prototyping</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Quick Details List */}
+            <div className="pt-6 border-t border-white/[0.05] space-y-4 font-sans text-xs">
+              <div className="flex justify-between items-center py-0.5">
+                <span className="text-neutral-500 uppercase tracking-wider font-mono text-[9px]">Location</span>
+                <span className="text-white font-medium">West Bengal, India</span>
+              </div>
+              <div className="flex justify-between items-center py-0.5">
+                <span className="text-neutral-500 uppercase tracking-wider font-mono text-[9px]">Availability</span>
+                <span className="text-amber-400 font-bold uppercase tracking-wider text-[10px]">Open for Freelance Projects</span>
+              </div>
+              <div className="flex justify-between items-center py-0.5">
+                <span className="text-neutral-500 uppercase tracking-wider font-mono text-[9px]">Response Time</span>
+                <span className="text-neutral-300 font-medium">Usually within 24 Hours</span>
               </div>
             </div>
 
@@ -269,6 +312,24 @@ export default function Contact() {
                 )}
               </AnimatePresence>
 
+            </div>
+
+            {/* WhatsApp Quick Direct Message CTA */}
+            <div className="mt-6 flex flex-col items-center">
+              <a 
+                href="https://wa.me/917908861804?text=Hello%20Shibam,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-4 px-6 bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.35)] hover:scale-[1.02] text-neutral-950 font-bold tracking-widest text-xs uppercase rounded-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-none interactive-cursor group"
+              >
+                <svg className="w-4.5 h-4.5 fill-neutral-950 group-hover:rotate-6 transition-transform duration-300" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.022-.08-.124-.22-.364-.34-.24-.12-1.418-.7-1.638-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-.992-.367-1.89-1.167-.698-.622-1.17-1.39-1.305-1.63-.137-.24-.015-.37.106-.49.11-.107.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.195-.476-.39-.412-.54-.42-.14-.008-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.418-.58 1.618-1.14.2-.56.2-1.04.14-1.14-.06-.1-.2-.16-.44-.28zM12 2C6.477 2 2 6.477 2 12c0 1.84.497 3.57 1.36 5.07L2 22l5.07-1.36C8.57 21.503 10.3 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.65 0-3.19-.44-4.52-1.21l-.32-.19-2.99.8.81-2.93-.21-.34C4.01 14.81 3.5 13.46 3.5 12c0-4.69 3.81-8.5 8.5-8.5s8.5 3.81 8.5 8.5-3.81 8.5-8.5 8.5z"/>
+                </svg>
+                Chat on WhatsApp
+              </a>
+              <p className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest mt-2 select-none">
+                Quickest way to reach me
+              </p>
             </div>
           </div>
 

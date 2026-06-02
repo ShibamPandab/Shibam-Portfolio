@@ -234,15 +234,15 @@ export default function Hero() {
           >
             <div>
               <p className="text-xl sm:text-2xl font-bold text-white">3</p>
-              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Key Projects</p>
+              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Featured Projects</p>
             </div>
             <div>
               <p className="text-xl sm:text-2xl font-bold text-white">10+</p>
-              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Learned Skills</p>
+              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Core Skills</p>
             </div>
             <div>
               <p className="text-xl sm:text-2xl font-bold text-white">100%</p>
-              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Responsive Focus</p>
+              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Responsive Design</p>
             </div>
           </motion.div>
 

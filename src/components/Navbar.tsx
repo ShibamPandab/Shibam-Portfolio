@@ -77,8 +77,8 @@ export default function Navbar({ activeSection }: NavbarProps) {
         <div 
           className={`flex items-center justify-between py-3 px-6 sm:px-8 rounded-full transition-all duration-500 ${
             isScrolled 
-              ? 'glass-card shadow-2xl shadow-amber-500/5' 
-              : 'bg-transparent border border-transparent'
+              ? 'bg-neutral-950/70 backdrop-blur-xl border border-white/[0.08] shadow-2xl shadow-amber-500/5' 
+              : 'bg-neutral-950/45 backdrop-blur-lg border border-white/[0.04]'
           }`}
         >
           {/* Brand/Monogram */}
