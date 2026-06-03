@@ -1,5 +1,6 @@
 # ✨ Shibam Pandab Portfolio
-![Portfolio Preview](./screenshots/portfolio-preview.png)
+![Portfolio Landing Page](portfolio-landing.png)
+![Portfolio About Me](about-me.png)
 Modern luxury-themed portfolio showcasing frontend development projects, responsive design, and AI-assisted web creation.
 
 🌐 Live Website:
