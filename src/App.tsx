@@ -11,7 +11,7 @@ import ProjectVault from './components/ProjectVault';
 import Timeline from './components/Timeline';
 import Services from './components/Services';
 import Achievements from './components/Achievements';
-import Testimonials from './components/Testimonials';
+import PhilosophyAndIndustries from './components/PhilosophyAndIndustries';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -99,8 +99,8 @@ export default function App() {
               {/* High-value achievements summary */}
               <Achievements />
               
-              {/* Client endorsements micro slider */}
-              <Testimonials />
+              {/* Project Philosophy & Industries Served */}
+              <PhilosophyAndIndustries />
               
               {/* Contact direct transmission fields */}
               <Contact />
