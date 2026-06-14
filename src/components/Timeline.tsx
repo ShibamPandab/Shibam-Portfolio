@@ -1,48 +1,48 @@
 import { motion } from 'motion/react';
-import { Calendar, GraduationCap, ChevronRight, Compass } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { TimelineItem } from '../types';
 
 export default function Timeline() {
   const experiences: TimelineItem[] = [
     {
       id: 'time-01',
-      period: '2021',
-      title: 'Learning HTML & Semantics',
-      companyOrRole: 'Structure Foundations',
-      description: 'Mastered the absolute rules of semantic markup, accessibility structures, and metadata, setting up the basic geometries of web design.',
-      tech: ['HTML5', 'SEO Semantics', 'ARIA Tags']
+      period: 'JAN – FEB 2026',
+      title: 'Foundations',
+      companyOrRole: 'HTML, CSS, Responsive Design, Semantic HTML, Accessibility',
+      description: 'Built strong web development fundamentals with a focus on clean structure, responsive layouts, semantic markup, and modern design principles.',
+      tech: ['HTML', 'CSS', 'Responsive Design', 'Semantic HTML', 'Accessibility']
     },
     {
       id: 'time-02',
-      period: '2022',
-      title: 'Evolving with CSS & Responsive Design',
-      companyOrRole: 'Layout Orchestration',
-      description: 'Dived deep into fluid mechanics, flexing grids, Tailwind classes, and responsive design systems. Establishing custom screen boundaries.',
-      tech: ['CSS3', 'Flexbox / Grid', 'Tailwind CSS']
+      period: 'MAR 2026',
+      title: 'AI-Powered Learning',
+      companyOrRole: 'AI Tools, Prompt Engineering, Development Workflows',
+      description: 'Leveraged modern AI tools to accelerate learning, improve development workflows, explore rapid prototyping, and increase productivity.',
+      tech: ['AI Tools', 'Prompt Engineering', 'Workflows']
     },
     {
       id: 'time-03',
-      period: '2023',
-      title: 'Infiltrating JavaScript ES6+ logic',
-      companyOrRole: 'Programmatic Systems',
-      description: 'Engineered programmatic interactions, DOM nodes tracking, modular ES imports, and browser storage integrations.',
-      tech: ['ECMAScript Next', 'DOM Controller', 'Dynamic Classes']
+      period: 'APR 2026',
+      title: 'Modern UI Systems',
+      companyOrRole: 'Animations, Premium Interfaces, UX Patterns',
+      description: 'Focused on crafting immersive user experiences through premium visual design, motion systems, interface architecture, and storytelling-driven layouts.',
+      tech: ['Animations', 'Premium Interfaces', 'UX Patterns']
     },
     {
       id: 'time-04',
-      period: '2024-2025',
-      title: 'Building Projects & Modern SPA Apps',
-      companyOrRole: 'Full Stack Integration',
-      description: 'Assembled full-scale React environments with state syncing, APIs fetching, customized canvas loaders, and real performance audits.',
-      tech: ['React.js', 'Next.js', 'Rest API Protocols']
+      period: 'MAY 2026',
+      title: 'Production Workflows',
+      companyOrRole: 'GitHub, Vercel, Deployment, Performance Optimization',
+      description: 'Adopted professional workflows including version control, deployment pipelines, performance optimization, debugging, and project maintenance.',
+      tech: ['GitHub', 'Vercel', 'Deployment', 'Optimization']
     },
     {
       id: 'time-05',
-      period: '2025-Present',
-      title: 'Freelance & Premium Collaborations',
-      companyOrRole: 'Bespoke Client Solutions',
-      description: 'Providing high-end portfolio curation, immersive SaaS products, and custom interfaces for enterprise clients globally.',
-      tech: ['Luxury UI Craft', 'Production Deploy', 'Framer Motion']
+      period: 'JUN 2026 – PRESENT',
+      title: 'Client-Focused Solutions',
+      companyOrRole: 'Portfolio Websites, Business Websites, SaaS Interfaces',
+      description: 'Designing and developing premium digital experiences tailored for businesses, creators, agencies, and modern brands with a focus on presentation and usability.',
+      tech: ['Portfolio Sites', 'Business Sites', 'SaaS Interfaces']
     }
   ];
 
@@ -64,7 +64,7 @@ export default function Timeline() {
             Evolution <span className="text-gold-gradient">Timeline</span>
           </h2>
           <p className="mt-4 text-neutral-400 max-w-xl text-sm sm:text-base font-sans">
-            Tracking the technical evolution from foundational concepts to enterprise aesthetics and high-ticket client deployment.
+            A focused six-month journey from web fundamentals to building premium client-ready digital experiences.
           </p>
           <div className="w-24 h-[1px] bg-amber-500/50 mt-6" />
         </div>
@@ -76,7 +76,7 @@ export default function Timeline() {
           <div className="absolute top-1/2 left-0 right-0 h-[1.5px] bg-neutral-800 hidden md:block z-0" style={{ transform: 'translateY(-50%)' }} />
           <div className="absolute top-1/2 left-0 w-3/4 h-[1.5px] bg-gradient-to-r from-amber-600 via-amber-400 to-transparent hidden md:block z-0" style={{ transform: 'translateY(-50%)' }} />
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10 items-stretch">
             {experiences.map((exp, idx) => (
               <motion.div
                 key={exp.id}
@@ -84,7 +84,7 @@ export default function Timeline() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="relative flex flex-col items-start text-left group"
+                className="relative flex flex-col items-start text-left group h-full"
               >
                 
                 {/* Visual Step bubble / Indicator */}
@@ -103,18 +103,20 @@ export default function Timeline() {
                 </div>
 
                 {/* Card details */}
-                <div className="p-5 sm:p-6 rounded-[20px] glass-card flex-1 w-full transition-all duration-300">
-                  <h3 className="font-display font-extrabold text-white text-sm sm:text-base tracking-tight uppercase">
-                    {exp.title}
-                  </h3>
-                  
-                  <p className="font-mono text-[9px] text-neutral-500 mt-1 uppercase tracking-wider">
-                    {exp.companyOrRole}
-                  </p>
+                <div className="p-5 sm:p-6 rounded-[20px] glass-card flex-1 w-full transition-all duration-300 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-display font-extrabold text-white text-sm sm:text-base tracking-tight uppercase">
+                      {exp.title}
+                    </h3>
+                    
+                    <p className="font-mono text-[9px] text-neutral-500 mt-1 uppercase tracking-wider">
+                      {exp.companyOrRole}
+                    </p>
 
-                  <p className="text-neutral-400 text-xs mt-3 leading-relaxed font-sans">
-                    {exp.description}
-                  </p>
+                    <p className="text-neutral-400 text-xs mt-3 leading-relaxed font-sans">
+                      {exp.description}
+                    </p>
+                  </div>
 
                   {/* Micro tags */}
                   <div className="flex flex-wrap gap-1.5 mt-4">
