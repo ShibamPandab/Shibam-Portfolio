@@ -52,7 +52,7 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-03',
-    title: 'Shibam Portfolio',
+    title: 'My Portfolio',
     category: 'Personal Brand',
     description: 'Premium developer portfolio showcasing web experiences, AI-powered projects, creative engineering, and modern digital craftsmanship.',
     tech: ['React', 'TypeScript', 'Tailwind V4', 'Vite'],
@@ -298,7 +298,7 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
               position: 'relative',
               display: 'flex',
               flexDirection: 'column',
-              height: '385px',
+              height: '365px',
             }}
             onMouseMove={onMouseMove}
             onMouseEnter={onMouseEnter}
@@ -384,7 +384,7 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
 
             {/* ── Card body ── */}
             <div style={{
-              padding: '13px 15px 15px',
+              padding: '10px 13px 13px',
               position: 'relative',
               zIndex: 3,
               flex: 1,
@@ -397,20 +397,20 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
                   fontFamily: '"Space Grotesk", sans-serif',
                   fontSize: 13, fontWeight: 700,
                   color: '#fff', letterSpacing: '-0.01em',
-                  marginBottom: 5, lineHeight: 1.25,
+                  marginBottom: 4, lineHeight: 1.25,
                 }}>
                   {project.title}
                 </h3>
                 <p style={{
                   fontFamily: '"Inter", sans-serif',
                   fontSize: 10, color: 'rgba(255,255,255,0.42)',
-                  lineHeight: 1.65, marginBottom: 10,
+                  lineHeight: 1.65, marginBottom: 8,
                   display: '-webkit-box',
                   WebkitLineClamp: 3,
                   WebkitBoxOrient: 'vertical',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
-                  height: '50px',
+                  height: '44px',
                 }}>
                   {project.description}
                 </p>
@@ -418,7 +418,7 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
 
               <div>
                 {/* Tech pills */}
-                <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 9 }}>
                   {project.tech.map(t => (
                     <span key={t} style={{
                       padding: '2px 7px',
@@ -436,7 +436,7 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
                 </div>
 
                 {/* Divider */}
-                <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+                <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 9 }} />
 
                 {/* CTA row */}
                 <div style={{ display: 'flex', gap: 7 }}>
@@ -842,7 +842,7 @@ function TabletCard({ project, index }: { key?: React.Key; project: VaultProject
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
-            height: '385px',
+            height: '365px',
           }}
         >
           <div className="vault-card-top-border" />
@@ -877,7 +877,7 @@ function TabletCard({ project, index }: { key?: React.Key; project: VaultProject
           
           {/* Body */}
           <div style={{
-            padding: '13px 15px 15px',
+            padding: '10px 13px 13px',
             position: 'relative',
             zIndex: 3,
             flex: 1,
@@ -889,27 +889,27 @@ function TabletCard({ project, index }: { key?: React.Key; project: VaultProject
               <h3 style={{
                 fontFamily: '"Space Grotesk", sans-serif',
                 fontSize: 13, fontWeight: 700, color: '#fff',
-                letterSpacing: '-0.01em', marginBottom: 5, lineHeight: 1.25,
+                letterSpacing: '-0.01em', marginBottom: 4, lineHeight: 1.25,
               }}>
                 {project.title}
               </h3>
               <p style={{
                 fontFamily: '"Inter", sans-serif',
                 fontSize: 10, color: 'rgba(255,255,255,0.42)',
-                lineHeight: 1.65, marginBottom: 10,
+                lineHeight: 1.65, marginBottom: 8,
                 display: '-webkit-box',
                 WebkitLineClamp: 3,
                 WebkitBoxOrient: 'vertical',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
-                height: '50px',
+                height: '44px',
               }}>
                 {project.description}
               </p>
             </div>
             
             <div>
-              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 9 }}>
                 {project.tech.map(t => (
                   <span key={t} style={{
                     padding: '2px 7px',
@@ -922,7 +922,7 @@ function TabletCard({ project, index }: { key?: React.Key; project: VaultProject
                   }}>{t}</span>
                 ))}
               </div>
-              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 9 }} />
               <div style={{ display: 'flex', gap: 7 }}>
                 <a
                   href={project.liveUrl} target="_blank" rel="noreferrer"
@@ -992,7 +992,7 @@ function MobileCard({ project, index }: { key?: React.Key; project: VaultProject
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
-            height: '385px',
+            height: '365px',
           }}
         >
           <div className="vault-card-top-border" />
@@ -1027,7 +1027,7 @@ function MobileCard({ project, index }: { key?: React.Key; project: VaultProject
           
           {/* Body */}
           <div style={{
-            padding: '13px 15px 15px',
+            padding: '10px 13px 13px',
             position: 'relative',
             zIndex: 3,
             flex: 1,
@@ -1039,27 +1039,27 @@ function MobileCard({ project, index }: { key?: React.Key; project: VaultProject
               <h3 style={{
                 fontFamily: '"Space Grotesk", sans-serif',
                 fontSize: 13, fontWeight: 700, color: '#fff',
-                letterSpacing: '-0.01em', marginBottom: 5, lineHeight: 1.25,
+                letterSpacing: '-0.01em', marginBottom: 4, lineHeight: 1.25,
               }}>
                 {project.title}
               </h3>
               <p style={{
                 fontFamily: '"Inter", sans-serif',
                 fontSize: 10, color: 'rgba(255,255,255,0.42)',
-                lineHeight: 1.65, marginBottom: 10,
+                lineHeight: 1.65, marginBottom: 8,
                 display: '-webkit-box',
                 WebkitLineClamp: 3,
                 WebkitBoxOrient: 'vertical',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
-                height: '50px',
+                height: '44px',
               }}>
                 {project.description}
               </p>
             </div>
             
             <div>
-              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 9 }}>
                 {project.tech.map(t => (
                   <span key={t} style={{
                     padding: '2px 7px',
@@ -1072,7 +1072,7 @@ function MobileCard({ project, index }: { key?: React.Key; project: VaultProject
                   }}>{t}</span>
                 ))}
               </div>
-              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 9 }} />
               <div style={{ display: 'flex', gap: 7 }}>
                 <a
                   href={project.liveUrl} target="_blank" rel="noreferrer"
