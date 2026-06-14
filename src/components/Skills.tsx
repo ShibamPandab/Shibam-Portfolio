@@ -17,10 +17,10 @@ export default function Skills() {
     { name: 'Vercel Deployment', category: 'backend', level: 70, glowColor: 'rgba(212, 175, 55, 0.25)' },
     
     // AI & Productivity
-    { name: 'AI Prompt Engineering', category: 'tools', level: 90, glowColor: 'rgba(212, 175, 55, 0.3)' },
-    { name: 'AI Website Generation', category: 'tools', level: 90, glowColor: 'rgba(212, 175, 55, 0.3)' },
-    { name: 'Gemini Studio', category: 'tools', level: 90, glowColor: 'rgba(212, 175, 55, 0.3)' },
-    { name: 'ChatGPT Workflow Integration', category: 'tools', level: 90, glowColor: 'rgba(212, 175, 55, 0.3)' },
+    { name: 'Prompt Systems Engineering', category: 'tools', level: 92, glowColor: 'rgba(212, 175, 55, 0.3)' },
+    { name: 'AI Workflow Automation', category: 'tools', level: 88, glowColor: 'rgba(212, 175, 55, 0.3)' },
+    { name: 'AI-Assisted Product Development', category: 'tools', level: 85, glowColor: 'rgba(212, 175, 55, 0.3)' },
+    { name: 'Rapid Prototyping & Research', category: 'tools', level: 82, glowColor: 'rgba(212, 175, 55, 0.3)' },
     
     // Design & UI
     { name: 'UI/UX Fundamentals', category: 'design', level: 50, glowColor: 'rgba(212, 175, 55, 0.2)' },

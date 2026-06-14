@@ -233,8 +233,8 @@ export default function Hero() {
             className="mt-14 pt-8 border-t border-white/[0.06] grid grid-cols-3 gap-6 font-display max-w-md w-full"
           >
             <div>
-              <p className="text-xl sm:text-2xl font-bold text-white">3</p>
-              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Featured Projects</p>
+              <p className="text-xl sm:text-2xl font-bold text-white">8+</p>
+              <p className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase mt-1">Premium Builds</p>
             </div>
             <div>
               <p className="text-xl sm:text-2xl font-bold text-white">10+</p>
