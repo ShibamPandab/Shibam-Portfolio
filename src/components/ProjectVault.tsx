@@ -5,7 +5,7 @@ import { ExternalLink, Github } from 'lucide-react';
 
 /* ════════════════════════════════════════════════════
    DATA
-════════════════════════════════════════════════════ */
+   ════════════════════════════════════════════════════ */
 interface VaultProject {
   id: string;
   title: string;
@@ -24,13 +24,13 @@ interface VaultProject {
 const VAULT_PROJECTS: VaultProject[] = [
   {
     id: 'vault-01',
-    title: 'AI Resume Builder',
-    category: 'AI Product',
-    description: 'Intelligent resume generation powered by LLMs. Parses job descriptions and tailors content in real-time with contextual awareness.',
-    tech: ['React', 'OpenAI API', 'TypeScript', 'Tailwind'],
-    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'FlowPilot.AI',
+    category: 'AI SaaS',
+    description: 'AI workflow automation platform designed to streamline repetitive business operations, intelligent task routing, and productivity workflows.',
+    tech: ['React', 'TypeScript', 'Node.js', 'Vercel'],
+    image: '/projects/flowpilot.png',
+    liveUrl: 'https://flow-pilot-ai-two.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/FlowPilot.Ai',
     floatClass: 'vault-float-a',
     floatDelay: '0s',
     revealDelay: 0,
@@ -38,13 +38,13 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-02',
-    title: 'Motion UI Kit',
-    category: 'Design System',
-    description: 'A library of 40+ animated React components. Spring physics, stagger patterns, and gesture-driven interactions.',
-    tech: ['React', 'Framer Motion', 'Storybook', 'TypeScript'],
-    image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'Eternity Films',
+    category: 'Wedding Cinematography',
+    description: 'Luxury cinematic wedding portfolio experience featuring immersive storytelling, emotional showcases, premium visual presentation, and modern booking journeys.',
+    tech: ['React', 'Vite', 'Motion', 'Tailwind'],
+    image: '/projects/eternity.png',
+    liveUrl: 'https://eternity-films.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/Eternity-Films',
     floatClass: 'vault-float-b',
     floatDelay: '-2s',
     revealDelay: 120,
@@ -52,13 +52,13 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-03',
-    title: 'Crypto Dashboard',
-    category: 'Data Interface',
-    description: 'Real-time crypto analytics with live WebSocket feeds, interactive candlestick charts, and portfolio tracking.',
-    tech: ['React', 'TypeScript', 'Chart.js', 'WebSocket'],
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'Shibam Portfolio',
+    category: 'Personal Brand',
+    description: 'Premium developer portfolio showcasing web experiences, AI-powered projects, creative engineering, and modern digital craftsmanship.',
+    tech: ['React', 'TypeScript', 'Tailwind V4', 'Vite'],
+    image: '/projects/shibam-portfolio.png',
+    liveUrl: 'https://shibam-portfolio-omega.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/shibam-portfolio',
     floatClass: 'vault-float-c',
     floatDelay: '-4s',
     revealDelay: 240,
@@ -66,13 +66,13 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-04',
-    title: '3D Product Viewer',
-    category: 'WebGL / Three.js',
-    description: 'Photorealistic product configurator. Real-time material swaps, HDR lighting, and shadow maps at 60fps.',
-    tech: ['Three.js', 'React Three Fiber', 'GLSL', 'Vite'],
-    image: 'https://images.unsplash.com/photo-1617957743098-4a98773c6a8a?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'Noir Etolie',
+    category: 'Fashion Ecommerce',
+    description: 'Elegant luxury fashion storefront crafted with immersive visuals, refined branding, and premium shopping experiences.',
+    tech: ['React', 'Vite', 'CSS Grid', 'Tailwind'],
+    image: '/projects/noir-etolie.png',
+    liveUrl: 'https://noir-etolie.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/Noir-etolie',
     floatClass: 'vault-float-a',
     floatDelay: '-1.5s',
     revealDelay: 360,
@@ -80,27 +80,27 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-05',
-    title: 'SaaS Landing Page',
-    category: 'Marketing UI',
-    description: 'Conversion-optimised landing with bento grid layout, scroll-driven animations, and A/B test-ready components.',
-    tech: ['Next.js', 'Tailwind V4', 'Motion', 'Vercel'],
-    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'Ember & Basil',
+    category: 'Restaurant & Dining',
+    description: 'Modern restaurant website focused on menu presentation, atmosphere storytelling, reservations, and customer engagement.',
+    tech: ['React', 'Vite', 'Motion', 'Vanilla CSS'],
+    image: '/projects/ember-basil.png',
+    liveUrl: 'https://ember-basil.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/Ember-Basil',
     floatClass: 'vault-float-b',
-    floatDelay: '-3s',
+    floatDelay: '-3.5s',
     revealDelay: 480,
     depthTier: 3,
   },
   {
     id: 'vault-06',
-    title: 'Neural Art Gallery',
-    category: 'Creative Build',
-    description: 'Generative art system using Canvas API and neural style transfer. Each artwork is procedurally unique.',
-    tech: ['Canvas API', 'WebGL', 'TensorFlow.js', 'React'],
-    image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'NovaCare Clinics',
+    category: 'Healthcare',
+    description: 'Patient-focused healthcare platform designed for accessibility, trust, appointment inquiries, and modern medical branding.',
+    tech: ['React', 'Vite', 'Tailwind', 'Formik'],
+    image: '/projects/novacare.png',
+    liveUrl: 'https://nova-care-clinics.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/NovaCare-Clinics',
     floatClass: 'vault-float-c',
     floatDelay: '-5s',
     revealDelay: 600,
@@ -108,13 +108,13 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-07',
-    title: 'CLI Dev Toolkit',
-    category: 'Developer Tools',
-    description: 'Terminal-first toolkit: scaffold projects, manage env files, run audit checks, and deploy in one command.',
-    tech: ['Node.js', 'TypeScript', 'Commander.js', 'Ink'],
-    image: 'https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'Monolith Architecture',
+    category: 'Architecture Studio',
+    description: 'Minimal architectural portfolio showcasing design philosophy, project galleries, spatial storytelling, and studio identity.',
+    tech: ['React', 'Vite', 'CSS Grid', 'Tailwind'],
+    image: '/projects/monolith.png',
+    liveUrl: 'https://monolith-architecture.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/monolith-architecture',
     floatClass: 'vault-float-a',
     floatDelay: '-2.5s',
     revealDelay: 720,
@@ -122,13 +122,13 @@ const VAULT_PROJECTS: VaultProject[] = [
   },
   {
     id: 'vault-08',
-    title: 'Design → Code AI',
-    category: 'AI Product',
-    description: 'Figma-to-production pipeline powered by GPT-4 Vision. Converts design frames into clean, accessible React components.',
-    tech: ['GPT-4 Vision', 'Figma API', 'React', 'Node.js'],
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800',
-    liveUrl: 'https://github.com/ShibamPandab',
-    githubUrl: 'https://github.com/ShibamPandab',
+    title: 'LushAura Saloon',
+    category: 'Beauty & Wellness',
+    description: 'Luxury salon and wellness experience featuring premium service showcases, beauty branding, and appointment-focused design.',
+    tech: ['React', 'Vite', 'Tailwind', 'Vanilla CSS'],
+    image: '/projects/lushaura.png',
+    liveUrl: 'https://lush-aura-saloon.vercel.app/',
+    githubUrl: 'https://github.com/ShibamPandab/LushAura-Saloon',
     floatClass: 'vault-float-b',
     floatDelay: '-6s',
     revealDelay: 840,
@@ -144,14 +144,14 @@ const VAULT_PROJECTS: VaultProject[] = [
  * Spacing has been carefully maximized to prevent overlaps or collisions at any viewport width.
  */
 const POSITIONS: [string, string][] = [
-  ['1%',   '1%'],   // 01 — outer top-left,      depth 1
-  ['80%',  '1%'],   // 02 — outer top-right,     depth 3
-  ['1%',   '69%'],  // 03 — outer bottom-left,   depth 2
-  ['80%',  '69%'],  // 04 — outer bottom-right,  depth 1
-  ['18%',  '35%'],  // 05 — mid-left,            depth 3
-  ['63%',  '35%'],  // 06 — mid-right,           depth 2
-  ['41%',  '5%'],   // 07 — inner top-center,    depth 1
-  ['40%',  '65%'],  // 08 — inner bottom-center, depth 3
+  ['2%', '2%'], // 01 — flowpilot
+  ['calc(50% - (clamp(242px, 19vw, 285px) / 2))', '2%'], // 02 — eternity
+  ['calc(98% - clamp(242px, 19vw, 285px))', '2%'], // 03 — shibam-portfolio
+  ['12%', '35%'], // 04 — noir-etolie
+  ['calc(88% - clamp(242px, 19vw, 285px))', '35%'], // 05 — ember-basil
+  ['2%', '68%'], // 06 — novacare
+  ['calc(50% - (clamp(242px, 19vw, 285px) / 2))', '68%'], // 07 — monolith
+  ['calc(98% - clamp(242px, 19vw, 285px))', '68%'], // 08 — lushaura
 ];
 
 /** Parallax travel distance (px) per depth tier for a full mouse excursion */
@@ -159,7 +159,7 @@ const PARALLAX_PX: Record<1 | 2 | 3, number> = { 1: 28, 2: 16, 3: 7 };
 
 /* ════════════════════════════════════════════════════
    NUCLEUS
-════════════════════════════════════════════════════ */
+   ════════════════════════════════════════════════════ */
 function GoldenNucleus() {
   return (
     <div
@@ -233,8 +233,8 @@ function GoldenNucleus() {
 }
 
 /* ════════════════════════════════════════════════════
-   VAULT CARD (pure display — no animation state here)
-════════════════════════════════════════════════════ */
+   VAULT CARD
+   ════════════════════════════════════════════════════ */
 interface CardProps {
   key?: React.Key;
   project: VaultProject;
@@ -269,12 +269,6 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
   const pad = (n: number) => String(n).padStart(2, '0');
 
   return (
-    /*
-     * 3-layer architecture:
-     *   wrapperDiv  — absolute position in universe + parallax transform (updated by rAF)
-     *     floatDiv  — CSS float animation (translateY drift)
-     *       cardDiv — visual glass card + hover interactions
-     */
     <div
       ref={wrapperRef}
       data-vault-id={project.id}
@@ -284,10 +278,9 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
         top: POSITIONS[index][1],
         width: 'clamp(242px, 19vw, 285px)',
         zIndex: project.depthTier === 1 ? 9 : project.depthTier === 2 ? 7 : 5,
-        /* parallax applied via el.style.transform in rAF loop */
       }}
     >
-      {/* Float animation wrapper — isolated from parallax */}
+      {/* Float animation wrapper */}
       <div
         className={project.floatClass}
         style={{ animationDelay: project.floatDelay }}
@@ -301,7 +294,12 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
           <div
             ref={cardEl}
             className="vault-card interactive-cursor"
-            style={{ position: 'relative' }}
+            style={{
+              position: 'relative',
+              display: 'flex',
+              flexDirection: 'column',
+              height: '385px',
+            }}
             onMouseMove={onMouseMove}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
@@ -385,106 +383,124 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
             </div>
 
             {/* ── Card body ── */}
-            <div style={{ padding: '13px 15px 15px', position: 'relative', zIndex: 3 }}>
-              <h3 style={{
-                fontFamily: '"Space Grotesk", sans-serif',
-                fontSize: 13, fontWeight: 700,
-                color: '#fff', letterSpacing: '-0.01em',
-                marginBottom: 5, lineHeight: 1.25,
-              }}>
-                {project.title}
-              </h3>
-              <p style={{
-                fontFamily: '"Inter", sans-serif',
-                fontSize: 10, color: 'rgba(255,255,255,0.42)',
-                lineHeight: 1.65, marginBottom: 10,
-              }}>
-                {project.description}
-              </p>
-
-              {/* Tech pills */}
-              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
-                {project.tech.map(t => (
-                  <span key={t} style={{
-                    padding: '2px 7px',
-                    background: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.07)',
-                    borderRadius: 100,
-                    fontFamily: '"JetBrains Mono", monospace',
-                    fontSize: 7, letterSpacing: '0.08em',
-                    textTransform: 'uppercase' as const,
-                    color: 'rgba(255,255,255,0.38)',
-                  }}>
-                    {t}
-                  </span>
-                ))}
+            <div style={{
+              padding: '13px 15px 15px',
+              position: 'relative',
+              zIndex: 3,
+              flex: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}>
+              <div>
+                <h3 style={{
+                  fontFamily: '"Space Grotesk", sans-serif',
+                  fontSize: 13, fontWeight: 700,
+                  color: '#fff', letterSpacing: '-0.01em',
+                  marginBottom: 5, lineHeight: 1.25,
+                }}>
+                  {project.title}
+                </h3>
+                <p style={{
+                  fontFamily: '"Inter", sans-serif',
+                  fontSize: 10, color: 'rgba(255,255,255,0.42)',
+                  lineHeight: 1.65, marginBottom: 10,
+                  display: '-webkit-box',
+                  WebkitLineClamp: 3,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  height: '50px',
+                }}>
+                  {project.description}
+                </p>
               </div>
 
-              {/* Divider */}
-              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+              <div>
+                {/* Tech pills */}
+                <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
+                  {project.tech.map(t => (
+                    <span key={t} style={{
+                      padding: '2px 7px',
+                      background: 'rgba(255,255,255,0.04)',
+                      border: '1px solid rgba(255,255,255,0.07)',
+                      borderRadius: 100,
+                      fontFamily: '"JetBrains Mono", monospace',
+                      fontSize: 7, letterSpacing: '0.08em',
+                      textTransform: 'uppercase' as const,
+                      color: 'rgba(255,255,255,0.38)',
+                    }}>
+                      {t}
+                    </span>
+                  ))}
+                </div>
 
-              {/* CTA row */}
-              <div style={{ display: 'flex', gap: 7 }}>
-                <a
-                  href={project.liveUrl}
-                  target="_blank" rel="noreferrer"
-                  className="interactive-cursor"
-                  style={{
-                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
-                    padding: '7px 0',
-                    background: 'rgba(212,175,55,0.08)',
-                    border: '1px solid rgba(212,175,55,0.28)',
-                    borderRadius: 9,
-                    fontFamily: '"Inter", sans-serif', fontWeight: 600,
-                    fontSize: 8, letterSpacing: '0.1em',
-                    textTransform: 'uppercase' as const,
-                    color: '#D4AF37', textDecoration: 'none',
-                    transition: 'background 0.25s ease, border-color 0.25s ease',
-                  }}
-                  onMouseEnter={e => {
-                    const a = e.currentTarget as HTMLAnchorElement;
-                    a.style.background = 'rgba(212,175,55,0.16)';
-                    a.style.borderColor = 'rgba(212,175,55,0.55)';
-                  }}
-                  onMouseLeave={e => {
-                    const a = e.currentTarget as HTMLAnchorElement;
-                    a.style.background = 'rgba(212,175,55,0.08)';
-                    a.style.borderColor = 'rgba(212,175,55,0.28)';
-                  }}
-                >
-                  <ExternalLink size={8} /> Demo
-                </a>
-                <a
-                  href={project.githubUrl}
-                  target="_blank" rel="noreferrer"
-                  className="interactive-cursor"
-                  style={{
-                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
-                    padding: '7px 0',
-                    background: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.08)',
-                    borderRadius: 9,
-                    fontFamily: '"Inter", sans-serif', fontWeight: 600,
-                    fontSize: 8, letterSpacing: '0.1em',
-                    textTransform: 'uppercase' as const,
-                    color: 'rgba(255,255,255,0.45)', textDecoration: 'none',
-                    transition: 'background 0.25s ease, border-color 0.25s ease, color 0.25s ease',
-                  }}
-                  onMouseEnter={e => {
-                    const a = e.currentTarget as HTMLAnchorElement;
-                    a.style.background = 'rgba(255,255,255,0.07)';
-                    a.style.borderColor = 'rgba(255,255,255,0.22)';
-                    a.style.color = '#fff';
-                  }}
-                  onMouseLeave={e => {
-                    const a = e.currentTarget as HTMLAnchorElement;
-                    a.style.background = 'rgba(255,255,255,0.03)';
-                    a.style.borderColor = 'rgba(255,255,255,0.08)';
-                    a.style.color = 'rgba(255,255,255,0.45)';
-                  }}
-                >
-                  <Github size={8} /> GitHub
-                </a>
+                {/* Divider */}
+                <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+
+                {/* CTA row */}
+                <div style={{ display: 'flex', gap: 7 }}>
+                  <a
+                    href={project.liveUrl}
+                    target="_blank" rel="noreferrer"
+                    className="interactive-cursor"
+                    style={{
+                      flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                      padding: '7px 0',
+                      background: 'rgba(212,175,55,0.08)',
+                      border: '1px solid rgba(212,175,55,0.28)',
+                      borderRadius: 9,
+                      fontFamily: '"Inter", sans-serif', fontWeight: 600,
+                      fontSize: 8, letterSpacing: '0.1em',
+                      textTransform: 'uppercase' as const,
+                      color: '#D4AF37', textDecoration: 'none',
+                      transition: 'background 0.25s ease, border-color 0.25s ease',
+                    }}
+                    onMouseEnter={e => {
+                      const a = e.currentTarget as HTMLAnchorElement;
+                      a.style.background = 'rgba(212,175,55,0.16)';
+                      a.style.borderColor = 'rgba(212,175,55,0.55)';
+                    }}
+                    onMouseLeave={e => {
+                      const a = e.currentTarget as HTMLAnchorElement;
+                      a.style.background = 'rgba(212,175,55,0.08)';
+                      a.style.borderColor = 'rgba(212,175,55,0.28)';
+                    }}
+                  >
+                    <ExternalLink size={8} /> Demo
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank" rel="noreferrer"
+                    className="interactive-cursor"
+                    style={{
+                      flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                      padding: '7px 0',
+                      background: 'rgba(255,255,255,0.03)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      borderRadius: 9,
+                      fontFamily: '"Inter", sans-serif', fontWeight: 600,
+                      fontSize: 8, letterSpacing: '0.1em',
+                      textTransform: 'uppercase' as const,
+                      color: 'rgba(255,255,255,0.45)', textDecoration: 'none',
+                      transition: 'background 0.25s ease, border-color 0.25s ease, color 0.25s ease',
+                    }}
+                    onMouseEnter={e => {
+                      const a = e.currentTarget as HTMLAnchorElement;
+                      a.style.background = 'rgba(255,255,255,0.07)';
+                      a.style.borderColor = 'rgba(255,255,255,0.22)';
+                      a.style.color = '#fff';
+                    }}
+                    onMouseLeave={e => {
+                      const a = e.currentTarget as HTMLAnchorElement;
+                      a.style.background = 'rgba(255,255,255,0.03)';
+                      a.style.borderColor = 'rgba(255,255,255,0.08)';
+                      a.style.color = 'rgba(255,255,255,0.45)';
+                    }}
+                  >
+                    <Github size={8} /> GitHub
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -496,7 +512,7 @@ function VaultCard({ project, index, wrapperRef, isVisible }: CardProps) {
 
 /* ════════════════════════════════════════════════════
    MAIN SECTION
-════════════════════════════════════════════════════ */
+   ════════════════════════════════════════════════════ */
 export default function ProjectVault() {
   const sectionRef  = useRef<HTMLDivElement>(null);
   const universeRef = useRef<HTMLDivElement>(null);
@@ -535,7 +551,7 @@ export default function ProjectVault() {
 
   /* ── Mouse parallax with lerp ── */
   useEffect(() => {
-    const mq = window.matchMedia('(max-width: 768px)');
+    const mq = window.matchMedia('(max-width: 1023px)');
     isMobile.current = mq.matches;
     const onMqChange = (e: MediaQueryListEvent) => { isMobile.current = e.matches; };
     mq.addEventListener('change', onMqChange);
@@ -663,7 +679,7 @@ export default function ProjectVault() {
               fontSize: 15, color: 'rgba(255,255,255,0.38)',
               marginTop: 16, maxWidth: 500, lineHeight: 1.75,
             }}>
-              A collection of experiments, client work, AI products, interfaces, and creative builds — suspended in digital space.
+              A curated showcase of real-world business platforms, custom AI systems, and interactive digital solutions.
             </p>
           </div>
 
@@ -689,7 +705,7 @@ export default function ProjectVault() {
               textTransform: 'uppercase' as const,
               color: 'rgba(212,175,55,0.65)',
             }}>
-              {VAULT_PROJECTS.length} Projects Orbiting
+              {VAULT_PROJECTS.length} Systems Active
             </span>
           </div>
         </div>
@@ -730,6 +746,25 @@ export default function ProjectVault() {
       </div>
 
       {/* ════════════════════════════════════
+          TABLET — 2-Column Grid
+          ════════════════════════════════════ */}
+      <div
+        className="vault-universe-tablet"
+        style={{
+          display: 'none',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '24px',
+          maxWidth: '800px',
+          margin: '0 auto',
+          padding: '0 40px 80px',
+        }}
+      >
+        {VAULT_PROJECTS.map((project, i) => (
+          <TabletCard key={project.id + '-tb'} project={project} index={i} />
+        ))}
+      </div>
+
+      {/* ════════════════════════════════════
           MOBILE — Stacked premium cards
           ════════════════════════════════════ */}
       <div
@@ -737,8 +772,8 @@ export default function ProjectVault() {
         style={{
           display: 'none',
           flexDirection: 'column',
-          gap: 18,
-          maxWidth: 480,
+          gap: 20,
+          maxWidth: 440,
           margin: '0 auto',
           padding: '0 20px 80px',
         }}
@@ -753,12 +788,19 @@ export default function ProjectVault() {
 
       {/* ── Responsive rules ── */}
       <style>{`
-        @media (min-width: 769px) {
+        @media (min-width: 1024px) {
           .vault-universe-desktop { display: block !important; }
+          .vault-universe-tablet  { display: none !important; }
           .vault-universe-mobile  { display: none !important; }
         }
-        @media (max-width: 768px) {
+        @media (min-width: 640px) and (max-width: 1023px) {
           .vault-universe-desktop { display: none !important; }
+          .vault-universe-tablet  { display: grid !important; }
+          .vault-universe-mobile  { display: none !important; }
+        }
+        @media (max-width: 639px) {
+          .vault-universe-desktop { display: none !important; }
+          .vault-universe-tablet  { display: none !important; }
           .vault-universe-mobile  { display: flex !important; }
         }
       `}</style>
@@ -768,16 +810,16 @@ export default function ProjectVault() {
 }
 
 /* ════════════════════════════════════════════════════
-   MOBILE CARD — simplified, no parallax, no float
-════════════════════════════════════════════════════ */
-function MobileCard({ project, index }: { key?: React.Key; project: VaultProject; index: number }) {
+   TABLET CARD — grid item, float only, no parallax
+   ════════════════════════════════════════════════════ */
+function TabletCard({ project, index }: { key?: React.Key; project: VaultProject; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const io = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setVisible(true); },
-      { threshold: 0.15 }
+      { threshold: 0.12 }
     );
     if (ref.current) io.observe(ref.current);
     return () => io.disconnect();
@@ -790,99 +832,276 @@ function MobileCard({ project, index }: { key?: React.Key; project: VaultProject
       style={{ animationDelay: `${index * 80}ms`, position: 'relative' }}
     >
       <div
-        className="vault-card"
-        style={{ position: 'relative', width: '100%' }}
+        className={project.floatClass}
+        style={{ animationDelay: project.floatDelay }}
       >
-        <div className="vault-card-top-border" />
-        {/* Image */}
-        <div style={{ position: 'relative', paddingTop: '50%', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
-          <img
-            src={project.image}
-            alt={project.title}
-            loading="lazy"
-            referrerPolicy="no-referrer"
-            style={{
-              position: 'absolute', inset: 0, width: '100%', height: '100%',
-              objectFit: 'cover', filter: 'brightness(0.78)',
-              transition: 'transform 0.55s ease',
-            }}
-          />
-          <div style={{
-            position: 'absolute', top: 10, left: 10, zIndex: 4,
-            padding: '3px 10px',
-            background: 'rgba(5,5,5,0.88)',
-            border: '1px solid rgba(212,175,55,0.35)',
-            borderRadius: 100,
-            fontFamily: '"JetBrains Mono", monospace',
-            fontSize: 8, letterSpacing: '0.18em',
-            textTransform: 'uppercase' as const, color: '#D4AF37',
-            backdropFilter: 'blur(8px)',
-          }}>
-            {project.category}
+        <div
+          className="vault-card"
+          style={{
+            position: 'relative',
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            height: '385px',
+          }}
+        >
+          <div className="vault-card-top-border" />
+          
+          {/* Image */}
+          <div style={{ position: 'relative', width: '100%', paddingTop: '50%', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+            <img
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              style={{
+                position: 'absolute', inset: 0, width: '100%', height: '100%',
+                objectFit: 'cover', filter: 'brightness(0.78)',
+                transition: 'transform 0.55s ease',
+              }}
+            />
+            <div style={{
+              position: 'absolute', top: 10, left: 10, zIndex: 4,
+              padding: '3px 10px',
+              background: 'rgba(5,5,5,0.88)',
+              border: '1px solid rgba(212,175,55,0.35)',
+              borderRadius: 100,
+              fontFamily: '"JetBrains Mono", monospace',
+              fontSize: 8, letterSpacing: '0.18em',
+              textTransform: 'uppercase' as const, color: '#D4AF37',
+              backdropFilter: 'blur(8px)',
+            }}>
+              {project.category}
+            </div>
           </div>
+          
+          {/* Body */}
           <div style={{
-            position: 'absolute', bottom: 0, left: 0, right: 0, height: '55%',
-            background: 'linear-gradient(to top, rgba(10,10,10,0.92), transparent)',
-            pointerEvents: 'none',
-          }} />
+            padding: '13px 15px 15px',
+            position: 'relative',
+            zIndex: 3,
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+          }}>
+            <div>
+              <h3 style={{
+                fontFamily: '"Space Grotesk", sans-serif',
+                fontSize: 13, fontWeight: 700, color: '#fff',
+                letterSpacing: '-0.01em', marginBottom: 5, lineHeight: 1.25,
+              }}>
+                {project.title}
+              </h3>
+              <p style={{
+                fontFamily: '"Inter", sans-serif',
+                fontSize: 10, color: 'rgba(255,255,255,0.42)',
+                lineHeight: 1.65, marginBottom: 10,
+                display: '-webkit-box',
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                height: '50px',
+              }}>
+                {project.description}
+              </p>
+            </div>
+            
+            <div>
+              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
+                {project.tech.map(t => (
+                  <span key={t} style={{
+                    padding: '2px 7px',
+                    background: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.07)',
+                    borderRadius: 100,
+                    fontFamily: '"JetBrains Mono", monospace',
+                    fontSize: 7, letterSpacing: '0.08em',
+                    textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.38)',
+                  }}>{t}</span>
+                ))}
+              </div>
+              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+              <div style={{ display: 'flex', gap: 7 }}>
+                <a
+                  href={project.liveUrl} target="_blank" rel="noreferrer"
+                  style={{
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                    padding: '7px 0',
+                    background: 'rgba(212,175,55,0.08)', border: '1px solid rgba(212,175,55,0.28)',
+                    borderRadius: 9, fontFamily: '"Inter", sans-serif', fontWeight: 600,
+                    fontSize: 8, letterSpacing: '0.1em',
+                    textTransform: 'uppercase' as const, color: '#D4AF37', textDecoration: 'none',
+                  }}
+                >
+                  <ExternalLink size={8} /> Demo
+                </a>
+                <a
+                  href={project.githubUrl} target="_blank" rel="noreferrer"
+                  style={{
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                    padding: '7px 0',
+                    background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: 9, fontFamily: '"Inter", sans-serif', fontWeight: 600,
+                    fontSize: 8, letterSpacing: '0.1em',
+                    textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', textDecoration: 'none',
+                  }}
+                >
+                  <Github size={8} /> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* Body */}
-        <div style={{ padding: '14px 16px 16px' }}>
-          <h3 style={{
-            fontFamily: '"Space Grotesk", sans-serif',
-            fontSize: 14, fontWeight: 700, color: '#fff',
-            letterSpacing: '-0.01em', marginBottom: 6, lineHeight: 1.2,
-          }}>
-            {project.title}
-          </h3>
-          <p style={{
-            fontFamily: '"Inter", sans-serif',
-            fontSize: 11, color: 'rgba(255,255,255,0.42)',
-            lineHeight: 1.65, marginBottom: 10,
-          }}>
-            {project.description}
-          </p>
-          <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 4, marginBottom: 12 }}>
-            {project.tech.map(t => (
-              <span key={t} style={{
-                padding: '2px 8px',
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.07)',
-                borderRadius: 100,
-                fontFamily: '"JetBrains Mono", monospace',
-                fontSize: 8, letterSpacing: '0.08em',
-                textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.38)',
-              }}>{t}</span>
-            ))}
+      </div>
+    </div>
+  );
+}
+
+/* ════════════════════════════════════════════════════
+   MOBILE CARD — simplified, no parallax, float only
+   ════════════════════════════════════════════════════ */
+function MobileCard({ project, index }: { key?: React.Key; project: VaultProject; index: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const io = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.12 }
+    );
+    if (ref.current) io.observe(ref.current);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`vault-card-reveal${visible ? ' is-visible' : ''}`}
+      style={{ animationDelay: `${index * 80}ms`, position: 'relative' }}
+    >
+      <div
+        className={project.floatClass}
+        style={{ animationDelay: project.floatDelay }}
+      >
+        <div
+          className="vault-card"
+          style={{
+            position: 'relative',
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            height: '385px',
+          }}
+        >
+          <div className="vault-card-top-border" />
+          
+          {/* Image */}
+          <div style={{ position: 'relative', width: '100%', paddingTop: '50%', overflow: 'hidden', borderRadius: '20px 20px 0 0' }}>
+            <img
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              style={{
+                position: 'absolute', inset: 0, width: '100%', height: '100%',
+                objectFit: 'cover', filter: 'brightness(0.78)',
+                transition: 'transform 0.55s ease',
+              }}
+            />
+            <div style={{
+              position: 'absolute', top: 10, left: 10, zIndex: 4,
+              padding: '3px 10px',
+              background: 'rgba(5,5,5,0.88)',
+              border: '1px solid rgba(212,175,55,0.35)',
+              borderRadius: 100,
+              fontFamily: '"JetBrains Mono", monospace',
+              fontSize: 8, letterSpacing: '0.18em',
+              textTransform: 'uppercase' as const, color: '#D4AF37',
+              backdropFilter: 'blur(8px)',
+            }}>
+              {project.category}
+            </div>
           </div>
-          <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 12 }} />
-          <div style={{ display: 'flex', gap: 8 }}>
-            <a
-              href={project.liveUrl} target="_blank" rel="noreferrer"
-              style={{
-                flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
-                padding: '8px 0',
-                background: 'rgba(212,175,55,0.09)', border: '1px solid rgba(212,175,55,0.3)',
-                borderRadius: 10, fontFamily: '"Inter", sans-serif', fontWeight: 600,
-                fontSize: 9, letterSpacing: '0.1em',
-                textTransform: 'uppercase' as const, color: '#D4AF37', textDecoration: 'none',
-              }}
-            >
-              <ExternalLink size={9} /> Demo
-            </a>
-            <a
-              href={project.githubUrl} target="_blank" rel="noreferrer"
-              style={{
-                flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5,
-                padding: '8px 0',
-                background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)',
-                borderRadius: 10, fontFamily: '"Inter", sans-serif', fontWeight: 600,
-                fontSize: 9, letterSpacing: '0.1em',
-                textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', textDecoration: 'none',
-              }}
-            >
-              <Github size={9} /> GitHub
-            </a>
+          
+          {/* Body */}
+          <div style={{
+            padding: '13px 15px 15px',
+            position: 'relative',
+            zIndex: 3,
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+          }}>
+            <div>
+              <h3 style={{
+                fontFamily: '"Space Grotesk", sans-serif',
+                fontSize: 13, fontWeight: 700, color: '#fff',
+                letterSpacing: '-0.01em', marginBottom: 5, lineHeight: 1.25,
+              }}>
+                {project.title}
+              </h3>
+              <p style={{
+                fontFamily: '"Inter", sans-serif',
+                fontSize: 10, color: 'rgba(255,255,255,0.42)',
+                lineHeight: 1.65, marginBottom: 10,
+                display: '-webkit-box',
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                height: '50px',
+              }}>
+                {project.description}
+              </p>
+            </div>
+            
+            <div>
+              <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 3, marginBottom: 11 }}>
+                {project.tech.map(t => (
+                  <span key={t} style={{
+                    padding: '2px 7px',
+                    background: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.07)',
+                    borderRadius: 100,
+                    fontFamily: '"JetBrains Mono", monospace',
+                    fontSize: 7, letterSpacing: '0.08em',
+                    textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.38)',
+                  }}>{t}</span>
+                ))}
+              </div>
+              <div style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.05)', marginBottom: 11 }} />
+              <div style={{ display: 'flex', gap: 7 }}>
+                <a
+                  href={project.liveUrl} target="_blank" rel="noreferrer"
+                  style={{
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                    padding: '7px 0',
+                    background: 'rgba(212,175,55,0.08)', border: '1px solid rgba(212,175,55,0.28)',
+                    borderRadius: 9, fontFamily: '"Inter", sans-serif', fontWeight: 600,
+                    fontSize: 8, letterSpacing: '0.1em',
+                    textTransform: 'uppercase' as const, color: '#D4AF37', textDecoration: 'none',
+                  }}
+                >
+                  <ExternalLink size={8} /> Demo
+                </a>
+                <a
+                  href={project.githubUrl} target="_blank" rel="noreferrer"
+                  style={{
+                    flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4,
+                    padding: '7px 0',
+                    background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: 9, fontFamily: '"Inter", sans-serif', fontWeight: 600,
+                    fontSize: 8, letterSpacing: '0.1em',
+                    textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', textDecoration: 'none',
+                  }}
+                >
+                  <Github size={8} /> GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
