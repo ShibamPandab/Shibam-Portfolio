@@ -208,21 +208,6 @@ export default function Contact() {
               </ul>
             </div>
 
-            {/* Quick Details List */}
-            <div className="pt-6 border-t border-white/[0.05] space-y-4 font-sans text-xs">
-              <div className="flex justify-between items-center py-0.5">
-                <span className="text-neutral-500 uppercase tracking-wider font-mono text-[9px]">Location</span>
-                <span className="text-white font-medium">West Bengal, India</span>
-              </div>
-              <div className="flex justify-between items-center py-0.5">
-                <span className="text-neutral-500 uppercase tracking-wider font-mono text-[9px]">Availability</span>
-                <span className="text-amber-400 font-bold uppercase tracking-wider text-[10px]">Open for Freelance Projects</span>
-              </div>
-              <div className="flex justify-between items-center py-0.5">
-                <span className="text-neutral-500 uppercase tracking-wider font-mono text-[9px]">Response Time</span>
-                <span className="text-neutral-300 font-medium">Usually within 24 Hours</span>
-              </div>
-            </div>
 
           </div>
 
@@ -353,6 +338,62 @@ export default function Contact() {
                 Quickest way to reach me
               </p>
             </div>
+          </div>
+
+        </div>
+
+        {/* Bottom Operational Status & Availability Showcase */}
+        <div className="mt-12 md:mt-16 pt-10 border-t border-white/[0.05] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start relative z-10">
+          
+          {/* LEFT COLUMN: Developer Details */}
+          <div className="space-y-6 text-left">
+            <h4 className="font-display text-sm font-bold text-neutral-400 uppercase tracking-wider flex items-center gap-2 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" /> Operational Status
+            </h4>
+            
+            <div className="space-y-6">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center pb-5 border-b border-white/[0.03] gap-2">
+                <span className="text-neutral-500 uppercase tracking-widest font-mono text-[10px]">Location</span>
+                <span className="text-white font-display text-lg font-bold">West Bengal, India</span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center pb-5 border-b border-white/[0.03] gap-2">
+                <span className="text-neutral-500 uppercase tracking-widest font-mono text-[10px]">Availability</span>
+                <span className="text-gold-gradient font-display text-lg font-black uppercase tracking-wider">Open for Freelance Projects</span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center pb-5 border-b border-white/[0.03] gap-2">
+                <span className="text-neutral-500 uppercase tracking-widest font-mono text-[10px]">Response Time</span>
+                <span className="text-neutral-300 font-display text-lg font-bold">Within 24 Hours</span>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN: Available For Checklist */}
+          <div className="space-y-6 text-left">
+            <h4 className="font-display text-sm font-bold text-neutral-400 uppercase tracking-wider flex items-center gap-2 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" /> Available For
+            </h4>
+            
+            <ul className="space-y-3">
+              {[
+                'Premium Portfolio Websites',
+                'Business Websites',
+                'SaaS Landing Pages',
+                'Frontend Development',
+                'UI/UX Optimization'
+              ].map((service) => (
+                <li 
+                  key={service} 
+                  className="flex items-center gap-3.5 p-3.5 glass rounded-xl border border-white/[0.03] hover:border-amber-500/20 hover:bg-white/[0.01] hover:translate-x-1.5 transition-all duration-300 group"
+                >
+                  <span className="w-5 h-5 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-[10px] font-bold shrink-0 shadow-[0_0_10px_rgba(212,175,55,0.1)] group-hover:scale-110 transition-transform duration-300">
+                    ✓
+                  </span>
+                  <span className="text-neutral-300 text-xs sm:text-sm font-medium tracking-wide group-hover:text-white transition-colors">
+                    {service}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
 
         </div>
