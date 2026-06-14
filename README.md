@@ -1,4 +1,4 @@
-# Shibam Pandab | Frontend Developer Portfolio — Midnight Luxury Edition
+# Shibam Pandab | Frontend Developer Portfolio 
 
 A premium, dark-themed developer portfolio built with **React 19**, **TypeScript**, **Vite 6**, **Tailwind CSS v4**, and **Motion (Framer Motion)**. This project showcases real, deployed frontend projects, a modern black-and-gold "Midnight Luxury" UI/UX system, and a fully responsive, animation-driven web experience — designed for clients, recruiters, startup founders, and developers looking for a skilled **frontend developer**, **React developer**, and **TypeScript developer** for portfolio websites, business landing pages, and AI-assisted web applications.
 
@@ -223,4 +223,8 @@ Open to freelance projects, collaborations, and full-time opportunities involvin
 *Built with React, TypeScript, Tailwind CSS, and a lot of attention to detail — from Kolkata, India.*
 ---
 
-Built with curiosity, consistency, and lots of coffee ☕
+---
+
+> **Not just projects. Proof of progress.**
+>
+> Every build in this portfolio represents a step forward in design, development, and problem-solving.
