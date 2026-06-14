@@ -104,7 +104,7 @@ export default function Timeline() {
                   </div>
 
                   {/* Card details */}
-                  <div className="p-5 pt-7 sm:p-6 sm:pt-8 rounded-[20px] glass-card flex-1 w-full transition-all duration-300 flex flex-col justify-between">
+                  <div className="p-5 pt-10 sm:p-6 sm:pt-12 rounded-[20px] glass-card flex-1 w-full transition-all duration-300 flex flex-col justify-between">
                     <div>
                       <h3 className="font-display font-extrabold text-white text-sm sm:text-base tracking-tight uppercase">
                         {exp.title}
@@ -114,7 +114,7 @@ export default function Timeline() {
                         {exp.companyOrRole}
                       </p>
 
-                      <p className="text-neutral-400 text-xs mt-5 leading-relaxed font-sans">
+                      <p className="text-neutral-400 text-xs mt-12 sm:mt-14 leading-relaxed font-sans">
                         {exp.description}
                       </p>
                     </div>
