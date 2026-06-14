@@ -73,8 +73,8 @@ export default function Timeline() {
         <div className="relative mt-12 md:mt-20">
           
           {/* Desktop Connection line (hidden on mobile) */}
-          <div className="absolute top-1/2 left-0 right-0 h-[1.5px] bg-neutral-800 hidden md:block z-0" style={{ transform: 'translateY(-50%)' }} />
-          <div className="absolute top-1/2 left-0 w-3/4 h-[1.5px] bg-gradient-to-r from-amber-600 via-amber-400 to-transparent hidden md:block z-0" style={{ transform: 'translateY(-50%)' }} />
+          <div className="absolute top-6 left-6 right-[calc(20%_-_24px)] h-[1.5px] bg-neutral-800 hidden md:block z-0" />
+          <div className="absolute top-6 left-6 w-3/5 h-[1.5px] bg-gradient-to-r from-amber-600 via-amber-400 to-transparent hidden md:block z-0" />
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10 items-stretch">
             {experiences.map((exp, idx) => (
@@ -84,53 +84,55 @@ export default function Timeline() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="relative flex flex-col items-start text-left group h-full"
+                className="h-full"
               >
-                
-                {/* Visual Step bubble / Indicator */}
-                <div className="flex items-center md:flex-col md:items-start gap-4 md:gap-0 w-full mb-4 md:mb-6">
+                <div className="relative flex flex-col items-start text-left group h-full">
                   
-                  {/* Circle */}
-                  <div className="w-12 h-12 rounded-full glass flex items-center justify-center relative z-10 group-hover:border-amber-400 group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-all duration-300">
-                    <span className="font-mono text-xs font-bold text-amber-400">0{idx + 1}</span>
-                  </div>
-
-                  {/* Period badge (on top for desktop grid, right for mobile) */}
-                  <div className="px-2.5 py-1 glass rounded-md font-mono text-[10px] tracking-widest text-[#D4AF37] uppercase md:mt-4">
-                    {exp.period}
-                  </div>
-
-                </div>
-
-                {/* Card details */}
-                <div className="p-5 sm:p-6 rounded-[20px] glass-card flex-1 w-full transition-all duration-300 flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-display font-extrabold text-white text-sm sm:text-base tracking-tight uppercase">
-                      {exp.title}
-                    </h3>
+                  {/* Visual Step bubble / Indicator */}
+                  <div className="flex items-center md:flex-col md:items-start gap-4 md:gap-0 w-full mb-6 md:mb-8">
                     
-                    <p className="font-mono text-[9px] text-neutral-500 mt-1 uppercase tracking-wider">
-                      {exp.companyOrRole}
-                    </p>
+                    {/* Circle */}
+                    <div className="w-12 h-12 rounded-full glass flex items-center justify-center relative z-10 group-hover:border-amber-400 group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-all duration-300">
+                      <span className="font-mono text-xs font-bold text-amber-400">0{idx + 1}</span>
+                    </div>
 
-                    <p className="text-neutral-400 text-xs mt-3 leading-relaxed font-sans">
-                      {exp.description}
-                    </p>
+                    {/* Period badge (on top for desktop grid, right for mobile) */}
+                    <div className="px-2.5 py-1 glass rounded-md font-mono text-[10px] tracking-widest text-[#D4AF37] uppercase md:mt-5">
+                      {exp.period}
+                    </div>
+
                   </div>
 
-                  {/* Micro tags */}
-                  <div className="flex flex-wrap gap-1.5 mt-4">
-                    {exp.tech?.map((t) => (
-                      <span 
-                        key={t}
-                        className="px-2 py-0.5 bg-neutral-900 border border-white/[0.04] rounded-md font-mono text-[8px] text-neutral-400 uppercase tracking-widest"
-                      >
-                        {t}
-                      </span>
-                    ))}
+                  {/* Card details */}
+                  <div className="p-5 pt-7 sm:p-6 sm:pt-8 rounded-[20px] glass-card flex-1 w-full transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                      <h3 className="font-display font-extrabold text-white text-sm sm:text-base tracking-tight uppercase">
+                        {exp.title}
+                      </h3>
+                      
+                      <p className="font-mono text-[9px] text-neutral-500 mt-2 uppercase tracking-wider">
+                        {exp.companyOrRole}
+                      </p>
+
+                      <p className="text-neutral-400 text-xs mt-5 leading-relaxed font-sans">
+                        {exp.description}
+                      </p>
+                    </div>
+
+                    {/* Micro tags */}
+                    <div className="flex flex-wrap gap-1.5 mt-5">
+                      {exp.tech?.map((t) => (
+                        <span 
+                          key={t}
+                          className="px-2 py-0.5 bg-neutral-900 border border-white/[0.04] rounded-md font-mono text-[8px] text-neutral-400 uppercase tracking-widest"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+
                 </div>
-
               </motion.div>
             ))}
           </div>
