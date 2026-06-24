@@ -56,8 +56,17 @@ export default function Contact() {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
+          // Who is writing — displayed in the email body
           from_name: formData.name,
           from_email: formData.email,
+          // reply_to tells EmailJS to set the Reply-To header to the visitor's
+          // email address. Clicking "Reply" in Gmail will therefore go to the
+          // visitor, not back to yourself, eliminating the "me to me" thread.
+          reply_to: formData.email,
+          // to_name personalises the greeting line in your template ("Hi Shibam,")
+          to_name: 'Shibam',
+          // subject surfaces the sender name in your Gmail inbox subject line
+          subject: `Portfolio Inquiry from ${formData.name}`,
           message: formData.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
