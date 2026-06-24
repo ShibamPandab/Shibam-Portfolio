@@ -1,7 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Send, CheckCircle, Github, Linkedin } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -43,7 +43,7 @@ export default function Contact() {
     return isValid;
   };
 
-  // ✅ EmailJS replaces Formspree here
+  // ✅ Formspree — no SDK needed, plain fetch()
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -52,31 +52,29 @@ export default function Contact() {
     setSubmitError('');
 
     try {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          // Who is writing — displayed in the email body
-          from_name: formData.name,
-          from_email: formData.email,
-          // reply_to tells EmailJS to set the Reply-To header to the visitor's
-          // email address. Clicking "Reply" in Gmail will therefore go to the
-          // visitor, not back to yourself, eliminating the "me to me" thread.
-          reply_to: formData.email,
-          // to_name personalises the greeting line in your template ("Hi Shibam,")
-          to_name: 'Shibam',
-          // subject surfaces the sender name in your Gmail inbox subject line
-          subject: `Portfolio Inquiry from ${formData.name}`,
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      );
+        }),
+      });
+
+      if (!response.ok) {
+        // Formspree returns a JSON body with an `errors` array on failure
+        const data = await response.json().catch(() => null);
+        const reason = data?.errors?.[0]?.message ?? 'Submission failed. Please try again.';
+        throw new Error(reason);
+      }
 
       setIsSuccess(true);
       setFormData({ name: '', email: '', message: '' });
-
     } catch (error) {
-      setSubmitError('Failed to send message. Please check your connection.');
+      setSubmitError(
+        error instanceof Error ? error.message : 'Failed to send message. Please check your connection.'
+      );
     } finally {
       setIsSubmitting(false);
     }
